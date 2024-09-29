@@ -13,7 +13,7 @@ const HomePage = () => {
     return (
         <div className="cafe-homepage">
             <h1>Welcome to Bore fountain pens</h1>
-            <p>Your go-to solution for AI-driven web applications.</p>
+            <p>Web site for handcrafted Gerhart Bore Fountain pens.</p>
             <div className={`cafe-color-box ${isBlue ? 'cafe-blue' : 'cafe-red'}`}></div>
             <button className="cafe-button" onClick={toggleColor}>Change Color</button>
         </div>
