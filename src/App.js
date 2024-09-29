@@ -1,13 +1,13 @@
+// src/App.js
 import React from 'react';
 import './App.css';
+import HomePage from './Views/HomePage';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello, Bore pens!</h1>
-      <p>If you can see this, the app is rendering correctly.</p>
+      <HomePage />
     </div>
   );
 }
-
 export default App;
