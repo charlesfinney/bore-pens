@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'RotisSansSerif';
+    src: url('../assets/fonts/RotisSansSerifStd.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #74748a;
+    font-family: 'RotisSansSerif', Arial, sans-serif;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.slogan {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.header-right ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.header-right ul li {
+    margin-left: 30px;
+}
+
+.header-right ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.header-right ul li a:hover {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .header-right ul {
+        margin-top: 20px;
+    }
+
+    .header-right ul li {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}

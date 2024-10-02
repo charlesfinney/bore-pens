@@ -1,26 +1,20 @@
-
-// src/Views/HomePage.js
-import React, { useState } from 'react';
+import React from 'react';
 import './HomePage.css';
+import Header from './Header';
+import Hero from './Hero';
+import MainContent from './MainContent';
+import Footer from './Footer';  // Change this to match the actual file name casing
 
-const HomePage = () => {
-    const [isBlue, setIsBlue] = useState(false);
-
-    const toggleColor = () => {
-        setIsBlue(!isBlue);
-    };
-
+function HomePage() {
     return (
-        <div className="cafe-homepage">
-            <img src="/logo192.png" alt="Bore Fountain pens" />
-            <h1>Welcome to Bore fountain pens</h1>
-            <h2>"Le bois qui écrit"</h2>
-            <p>Web site for handcrafted Gerhart Bore Fountain pens.</p>
-            <div className={`cafe-color-box ${isBlue ? 'cafe-blue' : 'cafe-red'}`}></div>
-            <button className="cafe-button" onClick={toggleColor}>Change Color</button>
+        <div className="homepage">
+            <Header />
+            <Hero />
+            <MainContent />
+            <Footer />
         </div>
     );
-};
+}
 
 export default HomePage;
 
